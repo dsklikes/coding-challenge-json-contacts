@@ -1,0 +1,135 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+h1 {
+  font-size: 22px;
+  line-height: 2.2em;
+}
+h2 {
+  font-size: 18px;
+  line-height: 1.8em;
+}
+input,textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button:hover {
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 3em 0;
+    padding: 0; 
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display:block;
+  margin-top: 10px;
+}
+div.error-message {
+  color: red;
+}
+input.error {
+  border-color: red;
+}
+.container {
+  width: 80%;
+  padding: 25px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.inline-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contact-list-container {
+  width: 65%;
+
+
+}
+#form-container {
+  width: 30%;
+}
+#contact-list {
+  list-style-type: none;
+  padding-left: 20px;
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#contact-list li {
+  font-size: 16px;
+  line-height: 34px;
+  margin: 10px 0;
+}
+
+#contact-list li .remove {
+  margin-right: 20px;
+}
+
+#json-input {
+  resize: none;
+  width: 75%;
+  height: 200px;
+  font-size: 13px;
+  line-height: 1.3em;
+}
+#event-log {
+  height: 200px;
+  overflow-y: scroll;
+  width:75%;
+}
+.btn-actions {
+  margin: 20px 0;
+}
+
+
+/* add some responsiveness */
+
+@media (max-width : 600px) {
+  .inline-container {
+    display: block;
+  }
+  #contact-list-container {
+    width: 100%;
+  }
+}

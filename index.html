@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+      <h1>JSON Contact List Importer/Exporter</h1>
+    <div id='form-container' class='inline-container'>
+      <h2>Form</h2>
+      <label for='fname'>First Name</label>
+      <input type='text' name='fname' id='first-name-input'>
+      <div class="error-message"></div>
+      <label for='lname'>Last Name</label>
+      <input type='text' name='lname' id='last-name-input'>
+      <div class="error-message"></div>
+      <label for='phone'>Phone Number</label>
+      <input type='text' name='phone' id='phone-input'>
+      <div class="error-message"></div>
+
+      <div class="btn-actions">
+        <button id='add-btn'>Add Contact</button>
+      </div>
+      
+    </div>
+    <div id="contact-list-container" class='inline-container'>
+      <h2>Contacts</h3>
+      <ul id="contact-list">
+      </ul>
+    </div>
+
+    <hr>
+    <div id="textarea-container">
+      <h2>Export/Import</h2>
+      <textarea id='json-input'></textarea>
+      <div class='btn-actions'>
+        <button id='import-btn'>Import Contacts</button>
+        <button id='export-btn'>Export Contacts</button>
+      </div>
+    </div>
+    <hr>
+    <div id='logger'>
+      <h2>Logging data</h2>
+      <div id='event-log'>
+      </div>
+    <div>
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>
